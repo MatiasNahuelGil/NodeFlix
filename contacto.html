@@ -36,11 +36,10 @@
                       Géneros
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Terror</a></li>
-                      <li><a class="dropdown-item" href="#">Drama</a></li>
-                      <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
-                      <li><a class="dropdown-item" href="#">Romance</a></li>
+                      <li><a class="dropdown-item" href="/tienda.html">Acción</a></li>
+                      <li><a class="dropdown-item" href="/tienda.html">Terror</a></li>
+                      <li><a class="dropdown-item" href="/tienda.html">Ciencia Ficción</a></li>
+                      <li><a class="dropdown-item" href="/tienda.html">Romance</a></li>
                       
                     </ul>
                   </li>
@@ -55,40 +54,37 @@
       
       </header>
 
-      <main class="main-form ">
-       
-          
-              <form class="form-container">
-          <p class="title">Contactate con nosotros</p>
-              <div class="flex">
+      <main class="main-form ">    
+         <form class="form-container">
+              <p class="title">Contactate con nosotros</p>
+          <div class="flex">
               <label class="label-name">
-                  <input class="input-contact " type="text" placeholder="" required="">
+                  <input class="input-contact " type="text" placeholder=""  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required title="Nombre solo acepta letras y espacios en blanco">
                   <span>Nombre:</span>
               </label>
       
               <label class="label-lastname">
-                  <input class="input-contact "  type="text" placeholder="" required="">
+                  <input class="input-contact "  type="text" placeholder=""  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"  required title="Apellido solo acepta letras y espacios en blanco">
                   <span>Apellido:</span>
               </label>
           </div>  
                   
           <label>
-              <input class="input-contact" type="email" placeholder="" required="">
+              <input class="input-contact" type="email" placeholder="" required>
               <span>Email:</span>
           </label> 
               
           <label>
-               <textarea name="comments" id="comentarios" cols="10" rows="5" placeholder="Consulta:">
+               <textarea name="comments" id="comentarios" cols="30" rows="5" placeholder="Consulta:">
                 
                </textarea>
           </label>
           <button class="submit">Enviar</button>
-              </form>
-          
-       
-     </main>
+         </form>
+       </main>
+     
 
-    <footer class="row mt-5">
+      <footer class="row mt-5">
         <h2 class="text-white text-center pt-5 ">NodeFlix</h2>
         <section class="row">
           <article class="text-white">
