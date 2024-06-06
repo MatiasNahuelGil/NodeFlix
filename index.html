@@ -11,7 +11,7 @@
     <title>Nodeflix</title>
 </head>
 <body class="background-main">
-  <header class="container-fluid min-vh-100 backgroundImageIndex header-index">
+  <header class="container-fluid sticky-top p-2">
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid ">
           <a class="navbar-brand text-white" href="#">NodeFlix</a>
@@ -48,49 +48,75 @@
         </div>
     </nav>
 
-    <div class="text-white container-title">
-       <h1 class="brand-title ">NodeFlix</h1>
-    </div>
+   
   
   </header>
- 
+
+
   <main class="background-main ">
-    <section class="featured-container container-fluid pt-2">
-        
-        <h2 class="text-center text-white  pt-3 pb-3">Clásicos que no te podes perder</h2>
-        <article class="featured pb-5 ">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/images/joker.jpg" class=" img-fluid" alt="joker">
+    <div class="search-container">
+      <h1 class="text-center text-white pt-4">Bienvenidos a NodeFlix </h1>
+      <label for="search"></label>
+      <input type="search" placeholder="Buscar peliculas....">
+    </div>
+    <section class="carrousel-container p-5">
+         <article>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner  ">
+              <div class="carousel-item active " data-bs-interval="4000">
+                  <div class="row">
+                      <div class="col img-container-carrousel ">
+                           <img src="/assets/images/joker.jpg" class="d-block w-100 " alt="joker">
+                      </div>
+                      <div class="col img-container-carrousel inactive">
+                           <img src="/assets/images/ficcion/planetaDeLosSimios.jpg"  class="d-block w-100 "  alt="planeta de los simios">
+                       </div>
+                      <div class="col img-container-carrousel inactive">
+                          <img src="/assets/images/accion/rapidosYFuriosos.jpg"  class="d-block w-100"  alt="rapidos y furiosos">
+                      </div>
+                  </div>
                
               </div>
-              <div class="carousel-item">
-                <img src="/assets/images/romance/After.jpg" class=" img-fluid" alt="...">
+              <div class="carousel-item " data-bs-interval="4000">
+                <div class="row">
+                  <div class="col img-container-carrousel ">
+                       <img src="/assets/images/romance/After.jpg" class="d-block w-100 " alt="after">
+                  </div>
+                  <div class="col img-container-carrousel inactive">
+                       <img src="/assets/images/terror/Annabelle.jpg "  class="d-block w-100 "  alt="annabelle">
+                   </div>
+                  <div class="col img-container-carrousel inactive">
+                      <img src="/assets/images/accion/maxMax.jpg"  class="d-block w-100"  alt="mad max">
+                  </div>
               </div>
-              <div class="carousel-item">
-                <img src="/assets/images/ficcion/avatar.jpg" class=" img-fluid" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col img-container-carrousel ">
+                       <img src="/assets/images/romance/CuestionDeTiempo.jpg" class="d-block w-100 " alt="cuestion de tiempo">
+                  </div>
+                  <div class="col img-container-carrousel inactive">
+                       <img src="/assets/images/interstellar.jpg "  class="d-block w-100 "  alt="interstellar">
+                   </div>
+                  <div class="col img-container-carrousel inactive">
+                      <img src="/assets/images/crepusculo.jpg"  class="d-block w-100"  alt="crepusculo">
+                  </div>
+              </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </article>
+         </article>
     </section>
-    
 
-    <div class="container">
+    <section class="container">
       <section class="row g-0">
         <article class="col-12 text-center text-white">
           <h1>Nuestras recomendaciones</h1>
@@ -118,6 +144,12 @@
                      <p>
                       En un mundo invadido y arrasado por unos letales extraterrestres que se guían por el sonido, Evelyn y Lee Abbott sobreviven con sus hijos en una granja aislada en el bosque, sumidos en el más profundo silencio. Mientras no hagan ruido, estarán a salvo.
                      </p>
+                     <p>Fecha de estreno: abril de 2018 (Argentina) <br>
+                      Director: John Krasinski <br>
+                      Recaudación: 341 millones USD<br>
+                      Presupuesto: 17 millones USD<br>
+                      Nominaciones: Premio del Sindicato de Actores a la Mejor Actriz de Reparto ·<br>
+                      Año: 2018</p>
                      <iframe width="560" height="315" src="https://www.youtube.com/embed/VWRNNpoar-E?si=0vDNK91rgjNKzu-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid"></iframe>
                   </div>
                    
@@ -144,6 +176,14 @@
                   <div class="modal-body">
                      <p>
                       Drácula es la creación literaria más famosa del vampirismo. Contenido: El abogado Jonathan Harker descubre que, en el castillo del conde Drácula, este se comporta por las noches como un vampiro. Harker sigue a Drácula a Inglaterra, donde el conde busca nuevas víctimas, entre ellas, a Mina, la prometida de Harker.
+                     </p>
+                     <p>
+                      Fecha de estreno: 9 de octubre de 2014 (Argentina) <br>
+                       Director: Gary Shore  <br>
+                       Historia de: Bram Stoker <br>
+                       Recaudación: 217,1 millones USD <br>
+                       Presupuesto: $70 millones <br>
+                       Adaptaciones de: Drácula <br>
                      </p>
                      <iframe width="560" height="315" src="https://www.youtube.com/embed/WcDFYtF8pSc?si=rba7QbAglmsX1cmX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid"></iframe>
                   </div>
@@ -172,6 +212,14 @@
                      <p>
                       El programador informático Thomas Anderson, más conocido en el mundo de los "hacker" como Neo, está en el punto de mira del temible agente Smith. Otros dos piratas informáticos, Trinity y Morfeo, se ponen en contacto con Neo para ayudarlo a escapar. Matrix te posee. Sigue al conejo blanco.
                      </p>
+                     <p>
+                      Fecha de estreno: 22 de diciembre de 2021 (Estados Unidos) <br>
+                       Directora: Lana Wachowski<br>
+                       Productores: Lana Wachowski, James McTeigue, Grant Hill<br>
+                       Recaudación: 159,2 millones USD<br>
+                       Año: 2021<br>
+                       Distribución: Warner Bros. Pictures<br>
+                     </p>
                      <iframe width="560" height="500" src="https://www.youtube.com/embed/qjnvX44LoQw?si=qtWlUnxmboHtIGqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid"></iframe>
                   </div>
                    
@@ -198,6 +246,14 @@
                   <div class="modal-body">
                      <p>
                       Mordido por una araña genéticamente modificada, un estudiante de secundaria tímido y torpe obtiene increíbles capacidades como arácnido. Pronto comprenderá que su cometido es utilizarlas para luchar contra el mal y defender a sus vecinos.
+                     </p>
+                     <p>
+                      Fecha de estreno: 17 de diciembre de 2021 (Estados Unidos) <br>
+                      Director: Jon Watts<br>
+                      Presupuesto: 200 millones USD<br>
+                      Año: 2021<br>
+                      Basada en: Spider-Man; de Stan Lee y; Steve Ditko<br>
+                      Distribución: Sony Pictures Releasing<br>
                      </p>
                      <iframe width="560" height="315" src="https://www.youtube.com/embed/8nNa5A_MRBU?si=6EqeWmiM5MLiddGN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid"></iframe>
                   </div>
@@ -226,6 +282,14 @@
                      <p>
                       Muchos años antes de convertirse en Presidente de Panem, el joven Coriolanus Snow es elegido mentor del Distrito 12 en los nuevos Juegos del Hambre. Aquí utiliza su encanto, astucia e inventiva para ayudar a su candidata a ganar.
                      </p>
+                     <p>
+                      Fecha de estreno: 17 de noviembre de 2023 (Estados Unidos) <br>
+                       Director: Francis Lawrence<br>
+                       Secuela: Los juegos del hambre<br>
+                       Recaudación: 337,4 millones USD<br>
+                       Adaptaciones de: Los Juegos del Hambre - Balada de pájaros cantores y serpientes<br>
+                       Presupuesto: 100 millones USDd<br>
+                     </p>
                      <iframe width="560" height="315" src="https://www.youtube.com/embed/HgO58Q3I5J0?si=3pfaTcHOJjcUhqpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid"></iframe>
                   </div>
                    
@@ -252,6 +316,14 @@
                      <p>
                       Varios niños de una pequeña ciudad del estado de Maine se alían para combatir a una entidad diabólica que adopta la forma de un payaso y desde hace mucho tiempo emerge cada 27 años para saciarse de sangre infantil.
                      </p>
+                     <p>
+                      Fecha de estreno: 21 de septiembre de 2017 (Argentina) <br>
+                      Director: Andrés Muschietti<br>
+                      Historia de: Stephen King<br>
+                      Secuela: It: capítulo dos<br>
+                      Adaptaciones de: It<br>
+                      Año: 2017<br>
+                     </p>
                      <iframe width="560" height="315" src="https://www.youtube.com/embed/_oBZ_zTz0Nw?si=iwBntfBwzXD-7jqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="img-fluid"></iframe>
                   </div>
                    
@@ -261,7 +333,50 @@
         </article>
        
       </section>
-    </div>
+    </section>
+
+
+    <section class="container question-container pt-5">
+      <h2 class="text-center text-white pb-2">Preguntas frecuentes</h2>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              ¿Qué es NodeFlix?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              NodeFlix es un sitio web de streaming que te permitirá ver películas desde cualquier dispositivo en la mejor calidad siempre que se encuentre disponible en nuestro portal. No alojamos ningun material audiovisual en nuestros servidores, utilizamos enlaces de terceros para compartirlo en portal
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              ¿Tengo que pagar?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Podes acceder a material gratuito de prueba, alquilar o comprar y tener el tiempo que quieras tu pelicula y aunque no alojamos ningún material, ya que no somos los propietarios, compartimos enlaces externos de otros servidores para que puedas disfrutar.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Cuando quieras, donde quieras
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body ">
+              Si tienes un dispositivo móvil, pc, tablet o tv, puedes disfrutar de todo el contenido sin problemas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 

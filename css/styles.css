@@ -94,16 +94,10 @@ body{
 
 /*seccion header */
 
-.header-index{
-    height: 30em;
-   
-}
 
-.backgroundImageIndex{
-   background-color: var(--background-main-color);
-    background-image: url("/assets/images/pexels-kalvisuals-3379934.jpg");
-    background-position: center;
-    background-size: cover;
+header{
+  
+  background-color: #000;
 }
 
 
@@ -114,9 +108,20 @@ body{
 }
 
 
+/** BUSCADOR **/
+.search-container input{
+  display: block;
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+  border-radius: 15px;
+  border: none;
+  outline: 3px solid #00bfff;
+}
+
+
 .brand-title{
-    font-size: 5rem;
-    align-self: center;
+  font-size: 5em;
 }
 
 .nav-link{
@@ -143,25 +148,15 @@ body{
 
 /*DESTACADOS */
 
-.carousel {
-  width: 90%;
-  border: 1px solid white;
-  margin: auto;
+
+
+.carousel-inner{
+height: 400px;
 }
 
-.featured-container{
-    width: 100%;
-    margin: auto;
-    
+.img-container-carrousel img{
+  height: 400px;
 }
-
-.carousel-item img{
-  display: block;
-  margin: auto;
-  width: 100%;  
- 
-}
-
 
 
 
@@ -516,6 +511,12 @@ footer {
     margin: auto;
   }
   
+}
+
+@media (max-width:750px){
+  .inactive{
+    display: none;
+  }
 }
 
  /*Large devices (desktops, 992px and up)*/
