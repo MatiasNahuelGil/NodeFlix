@@ -1,0 +1,48 @@
+<div class="container-fluid" style="background-color: coral; height: auto;">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+
+
+            <h1 class="text-center text-dark p-2 mt-4">Baja</h1>
+
+           {{#each data}}
+          
+
+             <form action="/movies/eliminar/{{id}}" method="post" enctype="multipart/form-data">
+                <div class="form-group my-3">
+                    <label for="formGroupExampleInput">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre" name="nombre" value="{{nombre}}" disabled>
+                </div>
+                <div class="form-group my-3">
+                    <label for="formGroupExampleInput2">Descripción</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el detalle de la Obra" name="descripcion"  value="{{descripcion}}" disabled>
+                </div>
+                {{!-- <div class="form-group">
+                    <label for="formGroupExampleInput3">Autor</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Autor de la Obra" name="autor" value="{{autor}}" disabled>
+                </div> --}}
+
+                <div class="form-group my-3">
+                    <label for="exampleFormControlFile1">Imagen</label>
+                    <input type="file" class="form-control" id="exampleFormControlFile1" name="imagen" disabled>
+                    <label for="" class="text-white mt-2">{{imagen}}</label>
+
+                    <img src="{{imagen}}" class="mt-2" style="width: 100%;" alt="" >
+
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-secondary btn-block mt-5">Eliminar</button>
+
+                    <a href="/movies/favoritos" class="btn btn-secondary btn-block mt-4 mb-4">Retornar</a>
+                </div>
+            </form>   
+
+            {{/each}}  
+
+
+
+
+        </div>
+    </div>
+</div>
