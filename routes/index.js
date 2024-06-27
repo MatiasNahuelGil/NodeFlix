@@ -1,9 +1,30 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
+
+const mysql = require('mysql2');
+const connection = mysql.createConnection({
+    host : 'localhost',
+    user : 'root',
+    password : 'Matias-619',
+    database: 'nodeflix'
+});
+
+connection.connect();
+
+
+/* GET Home page */
 router.get('/', function(req, res, next) {
-  res.render('index');
+
+  connection.query('select * from peliculas', function (error,
+    results,fields){
+     
+        if (error) throw error;
+      //  res.json({data: results});
+     
+       res.render('index',{data:results});
+    });
+
 });
 
 module.exports = router;

@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 
-var mysql = require('mysql2');
-var connection = mysql.createConnection({
+const mysql = require('mysql2');
+const connection = mysql.createConnection({
     host : 'localhost',
     user : 'root',
     password : 'Matias-619',
@@ -17,12 +17,19 @@ connection.connect();
 router.get('/', function(req, res, next) {
 
   connection.query('select * from peliculas', function (error,
-    results,fields){
+    resultsMovies,fields){
      
-        if (error) throw error;
-      //  res.json({data: results});
-     
-       res.render('movies',{data:results});
+        if (error){ 
+          throw error;
+        }
+    connection.query('select * from genero', function (error,
+      resultsGeneros,fields){
+       
+          if (error){
+           throw error; 
+          }
+         res.render('movies',{genero:resultsGeneros, data:resultsMovies});
+      });
     });
 
 });
