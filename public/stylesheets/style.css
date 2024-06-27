@@ -171,7 +171,29 @@ text-decoration: none;
 
 .card-img{
   height: 35em;
+  
+  transition: all 1s;
 }
+
+.card-img:hover{
+  border: 2px solid #00acee;
+}
+
+.card{
+  
+  transition: all 0.5s;
+  
+}
+
+.card:hover{
+  position: relative;
+  transform: scale(1.2,1);
+  z-index: 100;
+  cursor:pointer;
+  border: 1px solid #00acee;
+}
+
+
 
 .button-description{
   transition: all 0.5s;

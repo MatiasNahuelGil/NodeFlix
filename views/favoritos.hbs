@@ -1,1 +1,11 @@
 <h1>Favoritos</h1>
+<div>
+{{#each  data}}
+  <a href="/favoritos/viendoPelicula"><img src={{imagen}} alt={{titulo}}></a>
+
+  <a href="/favoritos/alta" class="btn btn-success">Agregar</a>
+  <a href="/favoritos/modificar/{{id}}" class="btn btn-primary">Editar</a>
+  <a href="/favoritos/eliminar/{{id}}" class="btn btn-success">Eliminar</a>
+
+{{/each}}
+</div>

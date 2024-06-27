@@ -51,14 +51,14 @@
                {{#each data}}
                 <article class="col-12 col-sm-6 col-lg-4">
                       <div class="card text-bg-dark border-0 rounded-0">
-                          <img src="{{imagen}}" class="card-img" alt="un lugar en silencio">
+                          <img src={{imagen}} class="card-img" alt={{titulo}}>
                           <div class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center">
                 
                               <p class="card-text">
                                   <a href="#" data-bs-toggle="modal" data-bs-target={{idmodal}} class="button-description">Descripción</a>
                                   <a href="/movies/modificar/{{id}}" class="btn btn-primary">Editar</a>
                                   <a href="/movies/eliminar/{{id}}" class="btn btn-success">Eliminar</a>
-                                  <a href="/movies/alta" class="btn btn-success">Agregar</a>
+                                  
                                   
                               </p>
 
