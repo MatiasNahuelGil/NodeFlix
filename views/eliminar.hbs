@@ -1,11 +1,11 @@
 {{> header}}
 
-<div class="container-fluid" style="background-color: coral; height: auto;">
+<div class="container-fluid" style="background-color: rgb(0, 0, 0); height: auto;">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
 
 
-            <h1 class="text-center text-dark p-2 mt-4">Baja</h1>
+            <h1 class="text-center text-white p-2 mt-4 fs-1">¿Estás seguro que quieres eliminar la pelicula de tu lista?</h1>
 
            {{#each data}}
           
@@ -34,9 +34,9 @@
                 </div>
 
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button type="submit" class="btn btn-secondary btn-block mt-5">Eliminar</button>
+                    <button type="submit" class="btn btn-secondary btn-block mt-5 delete-button">Eliminar</button>
 
-                    <a href="/movies/favoritos" class="btn btn-secondary btn-block mt-4 mb-4">Retornar</a>
+                    <a href="/favoritos" class="btn btn-secondary btn-block mt-4 mb-4 cancel-button">Cancelar</a>
                 </div>
             </form>   
 

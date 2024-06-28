@@ -1,16 +1,23 @@
 {{> header}}
 
-
-<h1>Favoritos</h1>
-<div>
-{{#each  data}}
-  <a href="/favoritos/viendoPelicula"><img src={{imagen}} alt={{titulo}}></a>
-
-  <a href="/favoritos/alta" class="btn btn-success">Agregar</a>
-  <a href="/favoritos/modificar/{{id}}" class="btn btn-primary">Editar</a>
-  <a href="/favoritos/eliminar/{{id}}" class="btn btn-success">Eliminar</a>
-
-{{/each}}
+<div class="container">
+    <h1 class="text-center text-white">Mi lista: favoritos</h1>
+   <a href="/favoritos/alta" class=" link-createMovie text-white">Agregar pelicula a la lista</a>
 </div>
+<section class="container   pt-5">
+  <article class="favorites-container d-flex flex-wrap">
+   {{#each  data}}
+   <div class="col-lg-3 col-md-6 col-12 card-favorite">
+     <div class="card-favorites">
+       <a href="/favoritos/viendoPelicula " ><img src={{imagen}} alt="{{titulo}}" class="img-fluid favorites-img"></a>
+       <div class="button-favorites-container">
+       <a href="/favoritos/modificar/{{id}}" class=" button-favorites">Editar</a>
+       <a href="/favoritos/eliminar/{{id}}" class=" button-favorites">Eliminar</a>
+       </div>
+    </div>
+    </div>
+     {{/each}}
+  </article>
+</section>
 
 {{>footer}}
